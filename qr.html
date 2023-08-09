@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>QR Code Generator </title>
+    <link rel="stylesheet" href="styleqr.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="background: #212139;">
+    <nav class="navbar navbar-expand-lg bg-body-trasnparent" style="font-size: 1.25rem;">
+        <div class="container-fluid" >
+          <img src="rostro.png" style="width: 70px; height: 90px;" >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item" >
+                <a class="nav-link"aria-current="page" href="index.html">Password Generator</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link  active" style="font-weight: 900; color: beige;" href="qr.html">Link a Qr</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="scannqr.html">QR scanner</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <div class="wrapper">
+      <header>
+        <h1>QR Code Generator</h1>
+        <p>Pega tu url o tu texto para crear el código QR</p>
+      </header>
+      <div class="form">
+        <input type="text" spellcheck="false" placeholder="Enter text or url">
+        <button>Generate QR Code</button>
+      </div>
+      <div class="qr-code">
+        <img src="" alt="qr-code">
+      </div>
+
+      <button class="download-btn" style="display: none;">Download QR Code</button>
+
+    </div>
+
+    <script src="scriptqr.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+  </body>
+</html>
